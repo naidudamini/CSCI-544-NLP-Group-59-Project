@@ -1,0 +1,38 @@
+Process Flow:
+
+Welcome msg
+What culture? 
+Artists displayed: Unknown Maker should not be displayed. Then ask which of these artists
+More Interactive text.
+Ask what size? User will answer in only small, big, large, etc. Filter paintings on dimensions. No need to display any result, direct filter for eg. Small would be all paintings less than say 50 width and/or 50 height. Then ask what kind of materials would you like to know about and display the distinct medium from the filtered paintings.  
+User will then enter canvas, wood, etc. Then continue with the functionality that already exists.
+Paintings displayed. Ask which of these paintings if multiple paintings displayed otherwise directly ask what would you like to know about this painting
+Ask what about painting?
+
+Dimensions: dimensions, size, small, big, large, (user should be able to ask this again about that painting)
+Medium: how made, material, medium, texture, type of, kind of, (user should be able
+Story: story, background, history, why made, description, describe
+Date: date, period, era, when, when created, when made, 
+Place: where, place, country, city, in which, region, area, 
+Map Artist as: painter, artist, who created, who made, who, painters, artists
+
+Display what else would you like to know about the painting after displaying answer
+If answer nothing or thank you, then ask would you like to know about another painting?
+If yes, then recent paintings displayed and ask which of these?
+If no, then ask would you like to know about another artist?
+If yes, display recent artists and ask which of these?
+If no, then ask would you like to know about another culture?
+If yes, restart process
+If no, then end process with thanks for using the Virtual Museum guide. Do visit the Getty center again
+Change the part where it is asking could you repeat. Indefinitely asking now if can’t understand if user enters for eg. Period for date. Ask could you repeat three time if still can’t understand user input then say sorry could you please enter another word for me to understand you better. 
+
+System Tests: 
+User input entered correctly? User errors: spelling mistakes, words database or system hasn’t seen, out of domain
+If correct results displayed, maps correctly to database, extracts and displays
+Fetch from db if present, Null value in db: else we don’t have this info available
+Please repeat if doesn’t map words correctly. System recognition error, if relevant word is not getting recognized. 
+Out of domain error if user enters invalid inputs (eg. What’s up)
+How many times is it asking could you repeat?
+
+Cultures creating issues in TextRazor API:
+English/Flemish/British/venetian/netherlandish
