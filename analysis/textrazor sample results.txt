@@ -1,0 +1,86 @@
+Sample results from Text Razor API for the following text:
+
+At the right, Venus, the goddess of love, rides in a processional chariot, assisted by blindfolded putti. Nymphs, satyrs, and other figures run, blow trumpets, or lie in languid poses on the ground. In the background, ghost-like figures swirl or lounge in front of an eerie landscape. Alessandro Magnasco painted his figures with nervous brushstrokes, adding an electric energy to the uninhibited revelry taking place amid elaborate ancient ruins. Magnasco probably painted this canvas and its pendant, Bacchanale, while in Milan early in his career. His collaborator Clemente Spera probably painted the architectural views.
+
+Topics classified with confidence scores 0.5 or higher:
+
+TOPICS
+1.00
+Italian painters
+1.00
+Plastic arts
+1.00
+Painters
+1.00
+Italian Baroque painters
+1.00
+Italian Baroque
+1.00
+Art movements
+1.00
+Italian male painters
+1.00
+Italian male artists
+1.00
+Baroque painters
+1.00
+Baroque painting
+1.00
+Western art
+1.00
+Painting
+1.00
+Italian artists
+1.00
+Arts
+0.99
+Baroque art
+0.96
+art movements
+0.93
+Italian art movements
+0.91
+Art media
+0.89
+Italian art people
+0.85
+Baroque
+0.83
+Alessandro Magnasco
+0.83
+Genoese painters
+0.79
+Italian vedutisti
+0.77
+Lombard painters
+0.75
+Visual arts
+0.75
+Painters of ruins
+0.73
+Milanese painters
+0.71
+Italian landscape painters
+0.68
+Rococo painters
+0.66
+Rococo artists
+0.56
+Clemente Spera
+0.56
+Landscape art
+0.54
+Female legendary creatures
+0.54
+Roman goddesses
+0.51
+Milan
+0.50
+Landscape artists
+
+Put these topics for each of the painting stories as keywords in the DB with their confidence
+
+Convert Cultures into Country using API:
+Text input German
+Output Germany
+
