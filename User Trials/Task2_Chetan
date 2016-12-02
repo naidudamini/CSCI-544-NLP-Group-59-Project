@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interaction>
+<!--Module DBModule successfully attached-->
+<!--Module FuzzyGetModule successfully attached-->
+<systemTurn>
+<variable id="u_m">
+<value>Welcome to the Virtual Getty Tour! Feel free to have a look around. To start, why don't you list a culture you're interested in</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>What are the Italian paintings you have</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, then let's look at Italian paintings.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Italian)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Hmm... There seem to be a lot of paintings meeting your criteria so perhaps you're looking for a particular subject or theme for your search?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Italian)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Some examples would include "Christianity", or "Impressionism"</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Italian)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Christianity is something I would be interested in</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>There were a few key words I picked up there that hold relevance with the selection we have on display. Here are the terms I'll restrict by: I; Christianity. Is that correct?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Italian)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, we'll look for paintings like that.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Hmm... There seem to be a lot of paintings meeting your criteria so perhaps you'd like to narrow down your options by size?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Currently, our selection is divided into big, medium, and small paintings</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Small sized seems good</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Sorry, we've only broken our collection down into big, medium, and small paintings.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Yes I just said small</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Well we've divided the collection into big, medium, and small works, so take your pick.</value>
+</variable>
+<variable id="a_m">
+<value prob="0.5">ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Small paintings? Sounds good.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Small)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, here are some artists that fit your criteria: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Small)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Domenico Beccafumi | Francesco Maffei | Andrea Mantegna | Correggio | Ercole de'Roberti</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Small)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Fra Angelico | Gentile da Fabriano | Giuseppe Maria Crespi | Lelio Orsi | Master of St. Cecilia</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Small)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Pompeo Batoni</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Small)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there any artist in particular that you're interested in?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Small)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Yes Francesco Maffei</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Well, which is the artist you're interested in, then?</value>
+</variable>
+<variable id="a_m">
+<value prob="0.5">ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Just to confirm, were you asking about Francesco Maffei?</value>
+</variable>
+<variable id="a_m">
+<value>Confirm(NameOfArtist, Francesco Maffei)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, we'll get you paintings by Francesco Maffei</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Francesco Maffei)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, here is a list of paintings that fit your criteria: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Francesco Maffei)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Rinaldo and the Mirror-Shield | Rinaldo's Conquest of the Enchanted Forest</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Francesco Maffei)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Any of these titles pique your interest?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Francesco Maffei)</value>
+</variable>
+</systemTurn>
+</interaction>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interaction>
+<!--Module DBModule successfully attached-->
+<!--Module FuzzyGetModule successfully attached-->
+<systemTurn>
+<variable id="u_m">
+<value>Welcome to the Virtual Getty Tour! Feel free to have a look around. To start, why don't you list a culture you're interested in</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Do you have any French paintings</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, then let's look at French paintings.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,French)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Hmm... There seem to be a lot of paintings meeting your criteria so perhaps you're looking for a particular subject or theme for your search?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,French)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Some examples would include "Christianity", or "Impressionism"</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,French)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Are there paintings made of canvas?</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>So you're looking for a painting done on canvas. Is that correct?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,French)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yup</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>I'd really appreciate if you would answer with a yes or a no...</value>
+</variable>
+<variable id="a_m">
+<value>Confirm(NameOfMedium, FILLER)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, we'll look for paintings like that.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfMedium,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Hmm... There seem to be a lot of paintings meeting your criteria so perhaps you're looking for a particular subject or theme for your search?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfMedium,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Some examples would include "Christianity", or "Impressionism"</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfMedium,FILLER)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Umm medium sized paintings is a theme alright?</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Medium paintings? Sounds good.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, here are some artists that fit your criteria: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Jean-François de Troy | Claude Monet | Edgar Degas | François-Xavier Fabre | Jean-Baptiste Raguenet</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Jean-Baptiste-Camille Corot | Jean-François Millet | Paul Cézanne | Édouard Manet | Attributed to Alexandre-Jean Noël</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Charles Le Brun | Jacques Joseph Tissot | Jacques Wilbaut | Jacques-Louis David | Jean-Baptiste Le Prince</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Jean-Baptiste Pillement | Jean-Siméon Chardin | Louis-Léopold Boilly | Philippe de Champaigne | Pierre-Auguste Renoir</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>William-Adolphe Bouguereau</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there any artist in particular that you're interested in?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(SizeOfArt,Medium)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>I would like to know about paintings by Edgar Degas</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Just to confirm, were you asking about Edgar Degas?</value>
+</variable>
+<variable id="a_m">
+<value>Confirm(NameOfArtist, Edgar Degas)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, we'll get you paintings by Edgar Degas</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Edgar Degas)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, here is a list of paintings that fit your criteria: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Edgar Degas)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>After the Bath | The Milliners</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Edgar Degas)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Any of these titles pique your interest?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfArtist,Edgar Degas)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, I'd appreciate if you'd tell me which piece you're interested in.</value>
+</variable>
+<variable id="a_m">
+<value>ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>After the Bath</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, what would you like to know about After the Bath?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Why was it made</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Women can never forgive me; they hate me, they feel that I am disarming them. I show them without their coquetry.  
+--Edgar Degas 
+ 
+Edgar Degas often depicted women in awkward and inelegant poses, eliciting sharp criticism. His comment above makes clear that he was aware of this response to his work. An early practitioner of Realism, Degas captured women engaged in mundane tasks--laundresses ironing, prostitutes waiting for clients, and, most frequently, women bathing. 
+ 
+The intimate subject of this painting, a woman bathing in a private interior, is one that invites voyeurism. Degas depicted the woman lying on a divan, while her maid dries or combs her hair. With her back pushed to the extreme foreground of the images, she seems to hold the viewer at bay. Bracing herself with her left arm, the woman uncomfortably raises her left leg against the edge of the bathtub. Such unnatural poses have perplexed critics of Degas's time, as they do viewers today. Some see these poses as an attempt to depict human movement not in idealized forms, but in ordinary, private behavior. Others see such representations of women as misogynistic.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>nope</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>I'm sorry, could you repeat that for me?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>no</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, feel free to pick another piece to investigate: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>After the Bath | The Milliners</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>The millinera</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>I'm sorry, could you repeat that for me?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Sorry the milliners</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, what would you like to know about The Milliners?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>So what would you like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Its history</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Two milliners sit at a dramatically angled worktable, their bodies partly obscured by the shadowed hat stands that crowd their work space. Seen as little more than a silhouette, the figure at right works carefully on a hat. Her attentiveness is not shared by her older counterpart who, though grasping a swath of pink fabric, appears lost in thought, gazing beyond the frame with a disquieting expression. The brightly colored ribbons--pink, yellow, orange, and green--draw attention to the drabness of the room and its inhabitants.     Over the course of about thirty years, Edgar Degas produced more than twenty paintings,  pastels , and drawings of millinery shops. Among modern painters, Degas alone depicted this subject matter with such frequency. His voyeuristic yet empathetic portrait of the milliner's private world focuses on the physical hardship of their work. The woman at the left embodies the painter's concern; even at rest, her wiry body and pallid skin registers a life of hard work and meager reward.</value>
+</variable>
+<variable id="a_m">
+<value>ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>no</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, feel free to pick another piece to investigate: </value>
+</variable>
+<variable id="a_m">
+<value>ConfirmPrompt</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>After the Bath | The Milliners</value>
+</variable>
+<variable id="a_m">
+<value>ConfirmPrompt</value>
+</variable>
+</systemTurn>
+</interaction>

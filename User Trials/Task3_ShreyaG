@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interaction>
+<!--Module DBModule successfully attached-->
+<!--Module FuzzyGetModule successfully attached-->
+<systemTurn>
+<variable id="u_m">
+<value>Welcome to the Virtual Getty Tour! Feel free to have a look around. To start, why don't you list a culture you're interested in</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Dutch</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, then let's look at Dutch paintings.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Dutch)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Hmm... There seem to be a lot of paintings meeting your criteria so perhaps you're looking for a particular subject or theme for your search?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Dutch)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Some examples would include "Christianity", or "Impressionism"</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Dutch)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>Entertainment</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>There were a few key words I picked up there that hold relevance with the selection we have on display. Here are the terms I'll restrict by: Entertainment. Is that correct?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(NameOfCulture,Dutch)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>yes</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, we'll look for paintings like that.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, here is a list of paintings that fit your criteria: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Landscape with Bathing Nudes | Rembrandt Laughing | The Abduction of Europa | The Doctor's Visit</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Any of these titles pique your interest?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(ChooseKeywords,FILLER)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>europa</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>All right, what would you like to know about The Abduction of Europa?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>medium</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>This work was created using Oil on single oak panel</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>size</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>The dimensions of this work are 64.6 × 78.7 cm (25 7/16 × 31 in.)</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>story</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>In the  Metamorphoses , the ancient Roman poet Ovid told a story about the god Jupiter, who disguised himself as a white bull in order to seduce the princess Europa away from her companions and carry her across the sea to the distant land that would bear her name.      During his long career Rembrandt rarely painted mythological subjects. Here he conveys a narrative story through dramatic gesture and visual effects. Bewildered, Europa grasps the bull's horn, digs her fingers into his neck, and turns back to look at her companions on the water's edge. One young woman falls to the ground and raises her arms in alarm, dropping the flower garland intended for the bull's neck into her lap, while her friend clasps her hands in consternation and watches helplessly. The carriage driver above rises to his feet and stares at the departing princess in horror. In the background, a city shrouded in mist extends along the horizon, perhaps serving as an allusion to the ancient city of Tyre as well as to contemporary Amsterdam.The dark thicket of trees to the right contrasts with the pink and blue regions of the sea and sky. Sunlight breaks through the clouds and reflects off the water, but the sky behind the trees is dark and foreboding.      A master of visual effects, Rembrandt took pleasure in describing the varied textures of sumptuous costumes and glittering gold highlights on the carriage and dresses.</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>date</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>This work is dated to 1632</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>artist</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>The creator of this work is Rembrandt Harmensz. van Rijn  (Dutch, 1606 - 1669)</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>place</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>This is a Dutch piece</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Is there anything else you'd like to know about this piece?</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<userTurn>
+<variable id="u_u">
+<value>no</value>
+</variable>
+</userTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Okay, feel free to pick another piece to investigate: </value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+<systemTurn>
+<variable id="u_m">
+<value>Landscape with Bathing Nudes | Rembrandt Laughing | The Abduction of Europa | The Doctor's Visit</value>
+</variable>
+<variable id="a_m">
+<value>Ground(TitleOfArtwork)</value>
+</variable>
+</systemTurn>
+</interaction>
