@@ -1,0 +1,9 @@
+Tests Iteration 2:
+
+1. Does system handle erroneus input? eg. Entered culture is "hvdbknd", system response should be enter one of the following cultures and display culture list
+
+2. Does it prompt the user to enter something right each time the user enters something wrong?
+
+3. If only one painting is retrieved from db based on filters, does the system directly ask the user about it instead of explicitly asking the user to enter the oen title name?
+
+All of the above pass in iteration3

@@ -1,0 +1,19 @@
+Tests Iteration1:
+
+Checking more of NLG component
+
+1. On entering culture is user being prompted to enter next input? 
+
+2. Lists of artits/paintings etc. when displayed, does the system ask the user to choose one of them explicitly? 
+3. Is system interpreting most possibble keywords for each field?
+
+Date/period/era/when/
+Medium/material/type of paint/kind of paint
+Dimensions/size/how big/
+Background/story/history/description/describe/
+
+4. Is system prompting user to enter one of the above keywords for a particular painting? 
+
+5. Is system ending the interaction with a message?
+
+All of the above pass in iteration2 except 5.

@@ -1,0 +1,11 @@
+Tests Iteration3:
+
+1. Is there an order of input that needs to be followed? First culture, then size, etc.?
+
+2. Specifying anything to the state subject/theme prompt retrieves results? 
+
+3. In the above case, each field is recognized properly? eg. If small paintings is entered to the above question does it map to the size field instead of the keywords field?
+
+4. When do the titles get displayed? How many inputs until the filter is narrowed down?
+
+All of the above pass and v1 release ready. Only system end interaction not yet satisfied.
