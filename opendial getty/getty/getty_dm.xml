@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain>
+	<!-- Dialogue Management -->
+	<model trigger="NameOfCultureStatus,NameOfArtistStatus,TitleOfArtworkStatus,SizeOfArtStatus,NameOfMediumStatus,ChooseKeywordsStatus">
+		<!-- Based on DBModule, we'll never have a tentative NoCS -->
+		<!--rule id="NoCS Fill">
+			<case>
+				<condition>
+					<if var="NameOfCultureStatus" value="tentative" relation = "="/>
+				</condition>
+				<condition>
+					<if var="current_step" value="NameOfCulture" />
+				</condition>
+				<effect util="1">
+					<set var="a_m" value="Ground(NameOfCulture, {NameOfCulture})" />
+				</effect>
+			</case>
+		</rule-->
+		<rule id="NoAS Fill">
+			<case>
+				<condition>
+					<if var="NameOfArtistStatus" value="tentative" relation="="/>
+					<if var="current_step" value="NameOfArtist" />
+				</condition>
+				<!-- The cooler thing would probably be to set the confidence = 1/len(results) in DBModule -->
+				<effect util="1">
+					<set var="a_m" value="Confirm(NameOfArtist, {NameOfArtist})" />
+				</effect>
+			</case>
+		</rule>
+		<rule id="SoAS Fill">
+			<case>
+				<condition>
+					<if var="SizeOfArtStatus" value="tentative" relation="="/>
+					<if var="current_step" value="SizeOfArt" />
+				</condition>
+				<effect util="1">
+					<set var="a_m" value="Confirm(SizeOfArt, {SizeOfArt})" />
+				</effect>
+			</case>
+		</rule>
+		<rule id="NoMS Fill">
+			<case>
+				<condition>
+					<if var="NameOfMediumStatus" value="tentative" relation="="/>
+					<if var="current_step" value="NameOfMedium" />
+				</condition>
+				<effect util="1">
+					<set var="a_m" value="Confirm(NameOfMedium, {NameOfMedium})" />
+				</effect>
+			</case>
+		</rule>
+		<rule id="CKS Fill">
+			<case>
+				<condition>
+					<if var="ChooseKeywordsStatus" value="tentative" relation="="/>
+					<if var="current_step" value="ChooseKeywords" />
+				</condition>
+				<effect util="1">
+					<set var="a_m" value="Confirm(ChooseKeywords, {ChooseKeywords})" />
+				</effect>
+			</case>
+		</rule>
+		<rule id="ToAS Fill">
+			<case>
+				<condition>
+					<if var="TitleOfArtworkStatus" value="tentative" relation="="/>
+					<if var="current_step" value="ChooseTitle" />
+				</condition>
+				<!-- The cooler thing would probably be to set the confidence = 1/len(results) in DBModule -->
+				<!-- The coolest thing would be to query using ORs for the keywords instead of ANDs, and keep a count of which results pop up the most for the different keywords. Then we choose the result that matched the most frequently using a confidence of some scaling of the occurrence rate -->
+				<!-- For example, Vincent van Gogh would return all the vincents, all the vans, and all the goghs, but van gogh would show up in all three searches whereas the other results would only show up in at most 2. -->
+				<!-- Say we got Vincent van Gogh 3 times and Jan van Goyen 1 time and Vincent van Fake 2 times. We'd do van Gogh with a much higher confidence than the other results -->
+				<!-- But if we queried for Jan Brueghel we'd get Jan Brueghel the Elder and Jan Brueghel the Younger each with 2 occurrences so the confidence would be pretty low there. -->
+				<effect util="1">
+					<set var="a_m" value="Confirm(TitleOfArtwork, {TitleOfArtwork})" />
+				</effect>
+			</case>
+		</rule>
+	</model>
+	
+	<model trigger="a_m">
+		<rule id="Generic Grounding">
+			<case>
+				<condition>
+					<if var="a_m" value="Ground({Slot},{Value})" />
+				</condition>
+				<effect util="1">
+					<set var="Ground{Slot}" value="{Value}" />
+				</effect>
+			</case>
+		</rule>
+		<rule id="Ground ToA">
+			<case>
+				<condition>
+					<if var="a_m" value="Ground(TitleOfArtwork)" />
+				</condition>
+				<effect util="1">
+					<set var="current_step" value="Explain" />
+					<set var="current_prompt" value="Explain" />
+					<set var="GetData" value="{TitleOfArtwork}" />
+				</effect>
+			</case>
+		</rule>
+	</model>
+</domain>

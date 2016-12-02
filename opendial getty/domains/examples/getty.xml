@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<domain>
+	
+	
+	<initialstate>
+		<!-- Let module know to initialize necessary variables -->
+		<variable id="init">
+			<value>true</value>
+		</variable>
+		
+		<!-- Initial welcome message -->
+		<variable id="u_m">
+			<value>Welcome to the Virtual Getty Tour! Feel free to have a look around. To start, why don't you list a culture you're interested in</value>
+		</variable>
+		
+		<!-- Set the current step we're interested in -->
+		<variable id="current_step">
+			<value>NameOfCulture</value>
+		</variable>
+	</initialstate>
+	
+	<!-- Natural Language Understanding Models -->
+	<import href="getty_nlu.xml"/>
+	
+	<!-- Dialogue Management, etc. -->
+	<import href="getty_dm.xml"/>
+	
+	<!-- Natural Language Generation -->
+	<import href="getty_nlg.xml"/>
+	
+	<!-- External module to interface with database -->
+	<!-- Also module to fuzzy match -->
+	<settings>
+		<modules>cs544.DBModule,cs544.FuzzyGetModule</modules>
+	</settings>
+	<function name="FuzzyMatch">cs544.FuzzyMatch</function>
+</domain>
