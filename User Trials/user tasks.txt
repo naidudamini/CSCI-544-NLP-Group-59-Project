@@ -1,0 +1,23 @@
+Task1:
+
+Find the story for all medium sized paintings painted by Edgar Degas belonging to the French culture that are made of canvas 
+
+Task2:
+
+Find Italian paintings based on Christianity that are small in size painted by Francesco Maffei 
+
+Task3: 
+
+Find the artist, medium, period, place, history and size of any painting based on entertainment belonging to the Dutch culture
+
+Task4:
+
+Find Flemish paintings made from oil on panel based on Western Art painted by Anthony Van Dyck
+
+12 Users
+4 tasks
+One task per user
+
+10/12 accomplished the given task 
+Most found difficulty in task 1 and 4 that didn't have prompts enforcing order
+
